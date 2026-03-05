@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>บทที่ 2: ตารางธาตุ | เคมี ม.4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Prompt:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-logo">⚗️ Chem<span>M4</span></div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <div class="preloader-text">กำลังโหลด บทที่ 2...</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-icon"><i class="bi bi-flask"></i></div>
+      เคมี ม.4
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4 text-primary"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> หน้าหลัก</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter1.html">⚛️ บทที่ 1</a></li>
+        <li class="nav-item"><a class="nav-link active" href="chapter2.html">📊 บทที่ 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter3.html">🔗 บทที่ 3</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter4.html">⚖️ บทที่ 4</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CHAPTER HERO -->
+<div class="chapter-hero ch2-hero">
+  <div class="container position-relative">
+    <div class="hero-icon">📊</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
+        <li class="breadcrumb-item active">บทที่ 2</li>
+      </ol>
+    </nav>
+    <h1>ตารางธาตุ</h1>
+    <p class="subtitle">Periodic Table · หมู่ คาบ · โลหะ อโลหะ กึ่งโลหะ · แนวโน้มสมบัติ</p>
+  </div>
+</div>
+
+<!-- ══ 2.1 โครงสร้างตารางธาตุ ══ -->
+<section class="lesson-section fade-in" id="s1">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#eff6ff;color:#1a56db"><i class="bi bi-grid-3x3-gap"></i></div>
+      <h3>2.1 โครงสร้างตารางธาตุ</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-info-circle text-primary"></i> หลักการจัดเรียง</h4>
+          <p>ตารางธาตุสมัยใหม่ (Modern Periodic Table) จัดเรียงธาตุทั้งหมด 118 ธาตุตาม<strong>เลขอะตอมที่เพิ่มขึ้น</strong> จากซ้ายไปขวา บนลงล่าง</p>
+          <div class="row g-2 mt-2">
+            <div class="col-6">
+              <div class="p-3 rounded text-center" style="background:#eff6ff;border:1.5px solid #bfdbfe;height:100%">
+                <div style="font-size:1.8rem">↕️</div>
+                <strong>หมู่ (Group)</strong>
+                <div style="font-size:.8rem;color:#64748b;margin-top:.3rem">แนวตั้ง 18 หมู่<br/>สมบัติคล้ายกัน</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 rounded text-center" style="background:#f0fdf4;border:1.5px solid #bbf7d0;height:100%">
+                <div style="font-size:1.8rem">↔️</div>
+                <strong>คาบ (Period)</strong>
+                <div style="font-size:.8rem;color:#64748b;margin-top:.3rem">แนวนอน 7 คาบ<br/>จำนวนชั้น e⁻</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-table text-primary"></i> ข้อมูลในตารางธาตุ</h4>
+          <p>แต่ละช่องในตารางธาตุแสดง:</p>
+          <div class="p-3 rounded text-center" style="background:#f8faff;border:2px solid #3b82f6;display:inline-block;min-width:120px">
+            <div style="font-size:.75rem;color:#64748b">เลขอะตอม</div>
+            <div style="font-size:2rem;font-weight:800;color:#1a56db;font-family:'Prompt',sans-serif">Na</div>
+            <div style="font-size:.85rem;font-weight:700">Sodium</div>
+            <div style="font-size:.75rem;color:#64748b">22.99 g/mol</div>
+          </div>
+          <ul class="mt-3">
+            <li>เลขอะตอม (Z)</li>
+            <li>สัญลักษณ์ธาตุ</li>
+            <li>ชื่อธาตุ</li>
+            <li>มวลอะตอม (g/mol)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 2.2 ประเภทธาตุ ══ -->
+<section class="lesson-section fade-in" id="s2">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fdf4ff;color:#9333ea"><i class="bi bi-palette2"></i></div>
+      <h3>2.2 ประเภทของธาตุ</h3>
+    </div>
+    <div class="row g-3 mb-3">
+      <div class="col-md-4">
+        <div class="content-card" style="border-top:3px solid #3b82f6">
+          <h4 style="color:#1d4ed8"><i class="bi bi-brightness-high"></i> โลหะ (Metal)</h4>
+          <div class="d-flex flex-wrap gap-1 mb-2">
+            <div class="element-badge metal"><strong>Na</strong><small>11</small></div>
+            <div class="element-badge metal"><strong>Fe</strong><small>26</small></div>
+            <div class="element-badge metal"><strong>Cu</strong><small>29</small></div>
+            <div class="element-badge metal"><strong>Au</strong><small>79</small></div>
+          </div>
+          <ul style="font-size:.88rem">
+            <li>อยู่<strong>ซ้าย</strong>ของตาราง</li>
+            <li>นำไฟฟ้าและความร้อนได้ดี</li>
+            <li>มันวาว ตีเป็นแผ่นได้</li>
+            <li>จุดหลอมเหลวสูง (ส่วนใหญ่)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content-card" style="border-top:3px solid #10b981">
+          <h4 style="color:#059669"><i class="bi bi-cloud"></i> อโลหะ (Nonmetal)</h4>
+          <div class="d-flex flex-wrap gap-1 mb-2">
+            <div class="element-badge nonmetal"><strong>O</strong><small>8</small></div>
+            <div class="element-badge nonmetal"><strong>Cl</strong><small>17</small></div>
+            <div class="element-badge nonmetal"><strong>S</strong><small>16</small></div>
+            <div class="element-badge nonmetal"><strong>N</strong><small>7</small></div>
+          </div>
+          <ul style="font-size:.88rem">
+            <li>อยู่<strong>ขวา</strong>ของตาราง</li>
+            <li>ไม่นำไฟฟ้า</li>
+            <li>เปราะ แตกง่าย</li>
+            <li>สถานะต่างกัน (แข็ง/แก๊ส/ของเหลว)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content-card" style="border-top:3px solid #f59e0b">
+          <h4 style="color:#d97706"><i class="bi bi-asterisk"></i> กึ่งโลหะ (Metalloid)</h4>
+          <div class="d-flex flex-wrap gap-1 mb-2">
+            <div class="element-badge semimetal"><strong>Si</strong><small>14</small></div>
+            <div class="element-badge semimetal"><strong>Ge</strong><small>32</small></div>
+            <div class="element-badge semimetal"><strong>As</strong><small>33</small></div>
+            <div class="element-badge semimetal"><strong>B</strong><small>5</small></div>
+          </div>
+          <ul style="font-size:.88rem">
+            <li>อยู่<strong>แนวบันได</strong> (staircase)</li>
+            <li>สมบัติอยู่ระหว่างโลหะ–อโลหะ</li>
+            <li>นำไฟฟ้าได้บ้าง (semiconductor)</li>
+            <li>ใช้ทำชิปคอมพิวเตอร์</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-wind text-primary"></i> แก๊สมีตระกูล (Noble Gas) — หมู่ 18</h4>
+          <div class="d-flex flex-wrap gap-1 mb-2">
+            <div class="element-badge noble"><strong>He</strong><small>2</small></div>
+            <div class="element-badge noble"><strong>Ne</strong><small>10</small></div>
+            <div class="element-badge noble"><strong>Ar</strong><small>18</small></div>
+            <div class="element-badge noble"><strong>Kr</strong><small>36</small></div>
+          </div>
+          <p style="font-size:.88rem">e⁻ ชั้นนอกสุดครบ 8 (He ครบ 2) → เสถียรมาก → แทบไม่ทำปฏิกิริยาเคมีใดๆ</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-fire text-danger"></i> โลหะอัลคาไล — หมู่ 1</h4>
+          <div class="d-flex flex-wrap gap-1 mb-2">
+            <div class="element-badge metal"><strong>Li</strong><small>3</small></div>
+            <div class="element-badge metal"><strong>Na</strong><small>11</small></div>
+            <div class="element-badge metal"><strong>K</strong><small>19</small></div>
+            <div class="element-badge metal"><strong>Cs</strong><small>55</small></div>
+          </div>
+          <p style="font-size:.88rem">e⁻ ชั้นนอกสุด = 1 → ว่องไวมาก ทำปฏิกิริยากับน้ำได้รุนแรง → เกิด H₂ และ OH⁻</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 2.3 แนวโน้มสมบัติ ══ -->
+<section class="lesson-section fade-in" id="s3">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fff7ed;color:#c2410c"><i class="bi bi-graph-up-arrow"></i></div>
+      <h3>2.3 แนวโน้มสมบัติของธาตุ</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-arrows-collapse text-primary"></i> Atomic Radius (รัศมีอะตอม)</h4>
+          <p style="font-size:.9rem">ระยะห่างจากศูนย์กลางนิวเคลียสถึงขอบ e⁻ ชั้นนอกสุด</p>
+          <div class="row text-center g-2 my-2">
+            <div class="col-12">
+              <div class="p-3 rounded" style="background:#eff6ff;border:1px dashed #3b82f6">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span style="font-size:.82rem">⬅ ซ้าย → ขวา (คาบเดียวกัน)</span>
+                  <span style="color:#ef4444;font-weight:700">ลดลง ↘</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span style="font-size:.82rem">⬆ บน → ล่าง (หมู่เดียวกัน)</span>
+                  <span style="color:#10b981;font-weight:700">เพิ่มขึ้น ↗</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:.85rem">เหตุผล: Z เพิ่ม → แรงดึงดูดนิวเคลียส-e⁻ มากขึ้น → อะตอมเล็กลง</p>
+          <div class="example-box">
+            <h6><i class="bi bi-pencil-square"></i> ลำดับรัศมีอะตอม</h6>
+            <div class="step">Li &gt; Na &gt; K (หมู่ 1, บนลงล่าง: เพิ่ม)</div>
+            <div class="step">Na &gt; Mg &gt; Al &gt; Si (คาบ 3, ซ้ายไปขวา: ลด)</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-magnet text-primary"></i> Electronegativity (ค่า EN)</h4>
+          <p style="font-size:.9rem">ความสามารถของอะตอมในการดึงดูดอิเล็กตรอนในพันธะเคมี</p>
+          <div class="p-3 rounded my-2" style="background:#fdf4ff;border:1px dashed #a855f7">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span style="font-size:.82rem">⬅ ซ้าย → ขวา (คาบเดียวกัน)</span>
+              <span style="color:#10b981;font-weight:700">เพิ่มขึ้น ↗</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="font-size:.82rem">⬆ บน → ล่าง (หมู่เดียวกัน)</span>
+              <span style="color:#ef4444;font-weight:700">ลดลง ↘</span>
+            </div>
+          </div>
+          <table class="table-chem w-100 mt-2">
+            <thead><tr><th>ธาตุ</th><th>EN (Pauling)</th></tr></thead>
+            <tbody>
+              <tr><td>F (สูงสุด)</td><td><strong>3.98</strong></td></tr>
+              <tr><td>O</td><td>3.44</td></tr>
+              <tr><td>N</td><td>3.04</td></tr>
+              <tr><td>Cl</td><td>3.16</td></tr>
+              <tr><td>Na</td><td>0.93</td></tr>
+              <tr><td>Cs (ต่ำสุดในโลหะ)</td><td>0.79</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="content-card mt-3">
+      <h4><i class="bi bi-arrow-up-circle text-primary"></i> Ionization Energy (พลังงานไอออไนเซชัน)</h4>
+      <p style="font-size:.9rem">พลังงานที่ต้องใช้เพื่อดึงอิเล็กตรอน 1 ตัวออกจากอะตอมในสถานะแก๊ส</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="p-3 rounded" style="background:#eff6ff;border:1px dashed #3b82f6">
+            <div class="d-flex justify-content-between mb-1"><span>ซ้าย → ขวา</span><span style="color:#10b981;font-weight:700">เพิ่มขึ้น ↗</span></div>
+            <div class="d-flex justify-content-between"><span>บน → ล่าง</span><span style="color:#ef4444;font-weight:700">ลดลง ↘</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p style="font-size:.85rem">เหตุผล: Z มาก → e⁻ ชั้นนอกถูกดึงแน่น → ต้องใช้พลังงานมากขึ้น<br/>
+          ธาตุที่มี IE สูงสุด: <strong>He (Noble Gas)</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 2.4 หมู่สำคัญ ══ -->
+<section class="lesson-section fade-in" id="s4">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#ecfdf5;color:#059669"><i class="bi bi-collection"></i></div>
+      <h3>2.4 หมู่สำคัญที่ควรรู้</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="content-card text-center" style="border-top:3px solid #3b82f6">
+          <strong style="color:#1d4ed8">หมู่ 1 (IA)</strong>
+          <div style="font-size:1.5rem;margin:.5rem 0">🔥</div>
+          <div style="font-weight:700;margin-bottom:.4rem">โลหะอัลคาไล</div>
+          <div style="font-size:.8rem;color:#64748b">Li, Na, K, Rb, Cs<br/>เวเลนซ์ e⁻ = 1<br/>ทำปฏิกิริยากับน้ำ</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="content-card text-center" style="border-top:3px solid #f97316">
+          <strong style="color:#c2410c">หมู่ 2 (IIA)</strong>
+          <div style="font-size:1.5rem;margin:.5rem 0">⚗️</div>
+          <div style="font-weight:700;margin-bottom:.4rem">อัลคาไลน์เอิร์ท</div>
+          <div style="font-size:.8rem;color:#64748b">Be, Mg, Ca, Sr, Ba<br/>เวเลนซ์ e⁻ = 2<br/>ทำปฏิกิริยาน้อยกว่า</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="content-card text-center" style="border-top:3px solid #a855f7">
+          <strong style="color:#7e22ce">หมู่ 17 (VIIA)</strong>
+          <div style="font-size:1.5rem;margin:.5rem 0">🧪</div>
+          <div style="font-weight:700;margin-bottom:.4rem">แฮโลเจน</div>
+          <div style="font-size:.8rem;color:#64748b">F, Cl, Br, I, At<br/>เวเลนซ์ e⁻ = 7<br/>ว่องไวมากในปฏิกิริยา</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="content-card text-center" style="border-top:3px solid #10b981">
+          <strong style="color:#065f46">หมู่ 18 (VIII A)</strong>
+          <div style="font-size:1.5rem;margin:.5rem 0">💨</div>
+          <div style="font-weight:700;margin-bottom:.4rem">แก๊สมีตระกูล</div>
+          <div style="font-size:.8rem;color:#64748b">He, Ne, Ar, Kr, Xe<br/>เวเลนซ์ e⁻ = 8<br/>เสถียร ไม่ทำปฏิกิริยา</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUMMARY + QUIZ ══ -->
+<section class="lesson-section fade-in" id="s5">
+  <div class="container">
+    <div class="summary-box">
+      <h5><i class="bi bi-bookmark-star-fill"></i> สรุปสำคัญ บทที่ 2 — ตารางธาตุ</h5>
+      <ul>
+        <li>ตารางธาตุจัดเรียงตามเลขอะตอมที่เพิ่มขึ้น</li>
+        <li>หมู่ = แนวตั้ง (เวเลนซ์ e⁻ เท่ากัน → สมบัติคล้ายกัน)</li>
+        <li>คาบ = แนวนอน (จำนวนชั้น e⁻ เท่ากัน)</li>
+        <li>Atomic Radius: ซ้าย→ขวา <strong>ลด</strong>, บน→ล่าง <strong>เพิ่ม</strong></li>
+        <li>Electronegativity: ซ้าย→ขวา <strong>เพิ่ม</strong>, บน→ล่าง <strong>ลด</strong></li>
+        <li>F มี EN สูงสุด (3.98), He มี IE สูงสุด</li>
+      </ul>
+    </div>
+
+    <div class="quiz-section" id="quiz2">
+      <h4><i class="bi bi-patch-question-fill"></i> แบบทดสอบ บทที่ 2</h4>
+
+      <div class="quiz-question" data-ans="b">
+        <p>1. ธาตุที่อยู่ในหมู่เดียวกันจะมีสมบัติใดเหมือนกัน?</p>
+        <label class="quiz-opt"><input type="radio" name="q2_1" value="a"> เลขมวล</label>
+        <label class="quiz-opt"><input type="radio" name="q2_1" value="b"> จำนวนเวเลนซ์อิเล็กตรอน</label>
+        <label class="quiz-opt"><input type="radio" name="q2_1" value="c"> จำนวนชั้นอิเล็กตรอน</label>
+        <div class="quiz-result" id="res2_1"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="c">
+        <p>2. ธาตุใดมีค่า Electronegativity สูงที่สุด?</p>
+        <label class="quiz-opt"><input type="radio" name="q2_2" value="a"> Oxygen (O)</label>
+        <label class="quiz-opt"><input type="radio" name="q2_2" value="b"> Chlorine (Cl)</label>
+        <label class="quiz-opt"><input type="radio" name="q2_2" value="c"> Fluorine (F)</label>
+        <div class="quiz-result" id="res2_2"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="a">
+        <p>3. ในคาบเดียวกัน เมื่อเลขอะตอมเพิ่มขึ้น รัศมีอะตอมจะเป็นอย่างไร?</p>
+        <label class="quiz-opt"><input type="radio" name="q2_3" value="a"> ลดลง</label>
+        <label class="quiz-opt"><input type="radio" name="q2_3" value="b"> เพิ่มขึ้น</label>
+        <label class="quiz-opt"><input type="radio" name="q2_3" value="c"> คงที่</label>
+        <div class="quiz-result" id="res2_3"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="b">
+        <p>4. ธาตุในหมู่ 17 เรียกว่าอะไร?</p>
+        <label class="quiz-opt"><input type="radio" name="q2_4" value="a"> Noble Gas</label>
+        <label class="quiz-opt"><input type="radio" name="q2_4" value="b"> Halogen</label>
+        <label class="quiz-opt"><input type="radio" name="q2_4" value="c"> Alkali Metal</label>
+        <div class="quiz-result" id="res2_4"></div>
+      </div>
+
+      <button class="btn-check-quiz mt-2" onclick="checkQuiz('quiz2')">
+        <i class="bi bi-check2-circle"></i> ตรวจคำตอบ
+      </button>
+      <div class="quiz-score" id="score2"></div>
+    </div>
+
+    <div class="page-nav">
+      <a href="chapter1.html"><i class="bi bi-arrow-left"></i> บทที่ 1: โครงสร้างอะตอม</a>
+      <span class="page-info">📖 บทที่ 2 / 4</span>
+      <a href="chapter3.html">บทที่ 3: พันธะเคมี <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">⚗️ Chem<span>M4</span></div>
+    <p>เนื้อหาเคมี ม.4 ตามหลักสูตร สสวท. | สร้างเพื่อการศึกษาไทย</p>
+    <p class="mt-1" style="font-size:.78rem;opacity:.5">© 2024 Chemistry M4 Learning</p>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

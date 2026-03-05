@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>บทที่ 3: พันธะเคมี | เคมี ม.4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Prompt:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-logo">⚗️ Chem<span>M4</span></div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <div class="preloader-text">กำลังโหลด บทที่ 3...</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-icon"><i class="bi bi-flask"></i></div>
+      เคมี ม.4
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4 text-primary"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> หน้าหลัก</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter1.html">⚛️ บทที่ 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter2.html">📊 บทที่ 2</a></li>
+        <li class="nav-item"><a class="nav-link active" href="chapter3.html">🔗 บทที่ 3</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter4.html">⚖️ บทที่ 4</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CHAPTER HERO -->
+<div class="chapter-hero ch3-hero">
+  <div class="container position-relative">
+    <div class="hero-icon">🔗</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
+        <li class="breadcrumb-item active">บทที่ 3</li>
+      </ol>
+    </nav>
+    <h1>พันธะเคมี</h1>
+    <p class="subtitle">Chemical Bonding · Ionic · Covalent · Metallic · Polar Molecule</p>
+  </div>
+</div>
+
+<!-- ══ 3.1 พันธะไอออนิก ══ -->
+<section class="lesson-section fade-in" id="s1">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#eff6ff;color:#3b82f6"><i class="bi bi-lightning-charge"></i></div>
+      <h3>3.1 พันธะไอออนิก (Ionic Bond)</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card" style="border-top:3px solid #3b82f6">
+          <h4><i class="bi bi-lightning-charge text-primary"></i> กลไกการเกิด</h4>
+          <p>เกิดจาก<strong>การถ่ายโอนอิเล็กตรอน</strong>จากอะตอมหนึ่งไปยังอีกอะตอมหนึ่ง ทำให้เกิด<strong>ไอออนบวก (cation)</strong> และ<strong>ไอออนลบ (anion)</strong> ซึ่งดึงดูดกันด้วย<strong>แรงไฟฟ้าสถิต (electrostatic force)</strong></p>
+          <div class="p-3 rounded mt-2" style="background:#eff6ff;border:1px dashed #3b82f6;font-size:.88rem">
+            <strong>เงื่อนไข:</strong> มักเกิดระหว่าง <strong>โลหะ + อโลหะ</strong><br/>
+            ค่า EN ต่างกันมาก (Δ EN ≥ 1.7 โดยทั่วไป)
+          </div>
+          <ul class="mt-2" style="font-size:.88rem">
+            <li>ตัวอย่าง: <strong>NaCl, MgO, CaCl₂, KBr</strong></li>
+            <li>จุดหลอมเหลวสูงมาก</li>
+            <li>นำไฟฟ้าได้เมื่อหลอมเหลวหรือละลายน้ำ</li>
+            <li>เปราะ แตกง่ายเมื่อถูกกระแทก</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่าง: การเกิด NaCl (เกลือแกง)</h6>
+          <div class="step">① Na (Z=11) การจัดเรียง: 2, 8, <strong>1</strong> → ต้องการเสีย e⁻ 1 ตัว</div>
+          <div class="step">② Cl (Z=17) การจัดเรียง: 2, 8, <strong>7</strong> → ต้องการรับ e⁻ 1 ตัว</div>
+          <div class="step">③ Na → Na⁺ + e⁻ &nbsp; (เสีย e⁻ → เวเลนซ์ e⁻ = 8)</div>
+          <div class="step">④ Cl + e⁻ → Cl⁻ &nbsp; (รับ e⁻ → เวเลนซ์ e⁻ = 8)</div>
+          <div class="step">⑤ Na⁺ + Cl⁻ → <strong>NaCl</strong> (ดึงดูดกันด้วยแรงไฟฟ้าสถิต)</div>
+        </div>
+        <div class="formula-card mt-2">
+          <h5>กฎออกเตต (Octet Rule)</h5>
+          <div class="formula" style="font-size:1rem">อะตอมต้องการ e⁻ ชั้นนอกสุด = 8</div>
+          <p>(ยกเว้น He ต้องการ 2)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3.2 พันธะโคเวเลนต์ ══ -->
+<section class="lesson-section fade-in" id="s2">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#ecfdf5;color:#059669"><i class="bi bi-link-45deg"></i></div>
+      <h3>3.2 พันธะโคเวเลนต์ (Covalent Bond)</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card" style="border-top:3px solid #10b981">
+          <h4><i class="bi bi-link-45deg" style="color:#059669"></i> กลไกการเกิด</h4>
+          <p>เกิดจาก<strong>การใช้อิเล็กตรอนร่วมกัน (shared electrons)</strong> ระหว่างอะตอม ทำให้ทั้งสองอะตอมมีเวเลนซ์ e⁻ ครบ 8</p>
+          <div class="p-3 rounded mt-2" style="background:#ecfdf5;border:1px dashed #10b981;font-size:.88rem">
+            <strong>เงื่อนไข:</strong> มักเกิดระหว่าง <strong>อโลหะ + อโลหะ</strong><br/>
+            ค่า EN ต่างกันน้อย (Δ EN &lt; 1.7)
+          </div>
+          <table class="table-chem w-100 mt-3">
+            <thead><tr><th>ประเภท</th><th>e⁻ ร่วม</th><th>ตัวอย่าง</th></tr></thead>
+            <tbody>
+              <tr><td>พันธะเดี่ยว (−)</td><td>1 คู่ (2e⁻)</td><td>H−H, H−Cl, H₂O</td></tr>
+              <tr><td>พันธะคู่ (=)</td><td>2 คู่ (4e⁻)</td><td>O=O, C=O (CO₂)</td></tr>
+              <tr><td>พันธะสาม (≡)</td><td>3 คู่ (6e⁻)</td><td>N≡N, C≡C</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่าง: H₂O (น้ำ)</h6>
+          <div class="step">① O มีเวเลนซ์ e⁻ = 6 ต้องการอีก 2 เพื่อให้ครบ 8</div>
+          <div class="step">② H แต่ละตัวมี e⁻ = 1 ต้องการอีก 1 เพื่อให้ครบ 2</div>
+          <div class="step">③ O ใช้ e⁻ ร่วมกับ H สองตัว → เกิดพันธะเดี่ยว 2 พันธะ</div>
+          <div class="step">④ โมเลกุล H₂O มีรูปร่างงอ (bent) มุมพันธะ ≈ 104.5°</div>
+        </div>
+        <div class="example-box mt-2">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่าง: N₂ (ไนโตรเจน)</h6>
+          <div class="step">① N มีเวเลนซ์ e⁻ = 5 ต้องการอีก 3</div>
+          <div class="step">② N ใช้ e⁻ ร่วมกัน 3 คู่ → <strong>พันธะสาม N≡N</strong></div>
+          <div class="step">③ พันธะสามแข็งแรงมาก → N₂ เสถียรมากในธรรมชาติ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3.3 พันธะโลหะ ══ -->
+<section class="lesson-section fade-in" id="s3">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fffbeb;color:#d97706"><i class="bi bi-gear-wide-connected"></i></div>
+      <h3>3.3 พันธะโลหะ (Metallic Bond)</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card" style="border-top:3px solid #f59e0b">
+          <h4><i class="bi bi-gear-wide-connected" style="color:#d97706"></i> กลไก: Electron Sea Model</h4>
+          <p>อะตอมโลหะเรียงตัวเป็นโครงผลึก ส่วนเวเลนซ์ e⁻ จะ<strong>หลุดออกมาเคลื่อนที่อิสระ</strong>ทั่วโครงผลึก เปรียบเหมือน "ทะเลอิเล็กตรอน" ที่ห้อมล้อมไอออนบวกของโลหะ</p>
+          <div class="p-3 rounded my-2" style="background:#fffbeb;border:1px dashed #f59e0b;text-align:center">
+            <div style="font-size:2rem">🔩⚡🔩</div>
+            <div style="font-size:.82rem;color:#92400e">ไอออนบวกโลหะ ← electron sea → ไอออนบวกโลหะ</div>
+          </div>
+          <ul style="font-size:.88rem">
+            <li><strong>นำไฟฟ้าได้ดีมาก</strong> (e⁻ อิสระ)</li>
+            <li>นำความร้อนได้ดี</li>
+            <li>มันวาว สะท้อนแสง</li>
+            <li>ตีเป็นแผ่น/ดึงเป็นลวดได้ (ductile/malleable)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-table" style="color:#d97706"></i> เปรียบเทียบพันธะทั้ง 3</h4>
+          <div class="table-responsive">
+            <table class="table-chem w-100">
+              <thead><tr><th>สมบัติ</th><th>ไอออนิก</th><th>โคเวเลนต์</th><th>โลหะ</th></tr></thead>
+              <tbody>
+                <tr><td>กลไก</td><td>ถ่าย e⁻</td><td>ใช้ e⁻ ร่วม</td><td>e⁻ อิสระ</td></tr>
+                <tr><td>ธาตุ</td><td>โลหะ+อโลหะ</td><td>อโลหะ+อโลหะ</td><td>โลหะ+โลหะ</td></tr>
+                <tr><td>จุดหลอมเหลว</td><td>สูง</td><td>ต่ำ–กลาง</td><td>สูง</td></tr>
+                <tr><td>นำไฟฟ้า</td><td>เมื่อละลาย</td><td>ไม่นำ</td><td>นำดีมาก</td></tr>
+                <tr><td>ละลายน้ำ</td><td>ละลายดี</td><td>ขึ้นกับขั้ว</td><td>ไม่ละลาย</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3.4 โมเลกุลขั้ว ══ -->
+<section class="lesson-section fade-in" id="s4">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fdf4ff;color:#9333ea"><i class="bi bi-arrow-left-right"></i></div>
+      <h3>3.4 โมเลกุลขั้วและไม่มีขั้ว</h3>
+    </div>
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <div class="content-card" style="border:2px solid #3b82f6">
+          <h4><i class="bi bi-droplet-half text-primary"></i> Polar Molecule (โมเลกุลมีขั้ว)</h4>
+          <p>เกิดเมื่อ:</p>
+          <ul style="font-size:.88rem">
+            <li>ค่า EN ของอะตอมใน<strong>พันธะต่างกัน ≥ 0.4</strong></li>
+            <li>มีโมเมนต์ไดโพล (dipole moment) ไม่เป็นศูนย์</li>
+            <li>รูปร่างโมเลกุลไม่สมมาตร</li>
+          </ul>
+          <div class="p-3 rounded mt-2" style="background:#eff6ff;border:1px dashed #3b82f6">
+            <strong>ตัวอย่าง:</strong>
+            <div style="font-size:.85rem;margin-top:.3rem">H₂O (งอ), HCl, NH₃, HF, SO₂</div>
+          </div>
+          <p class="mt-2" style="font-size:.85rem"><strong>สมบัติ:</strong> ละลายในน้ำได้ดี, มีจุดเดือดสูงกว่า</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card" style="border:2px solid #94a3b8">
+          <h4><i class="bi bi-circle" style="color:#64748b"></i> Nonpolar Molecule (ไม่มีขั้ว)</h4>
+          <p>เกิดเมื่อ:</p>
+          <ul style="font-size:.88rem">
+            <li>EN เท่ากัน (พันธะ nonpolar covalent)</li>
+            <li>หรือโมเมนต์ไดโพลหักล้างกันหมด</li>
+            <li>รูปร่างโมเลกุลสมมาตร</li>
+          </ul>
+          <div class="p-3 rounded mt-2" style="background:#f8fafc;border:1px dashed #94a3b8">
+            <strong>ตัวอย่าง:</strong>
+            <div style="font-size:.85rem;margin-top:.3rem">H₂, N₂, O₂, CO₂ (เส้นตรง), CH₄ (ทรงสี่หน้า)</div>
+          </div>
+          <p class="mt-2" style="font-size:.85rem"><strong>สมบัติ:</strong> ละลายในตัวทำละลายอินทรีย์</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-card">
+      <h4><i class="bi bi-grid-3x3 text-primary"></i> สรุป: ตารางพันธะโคเวเลนต์ตามค่า ΔEN</h4>
+      <div class="table-responsive">
+        <table class="table-chem w-100">
+          <thead><tr><th>ΔEN (ผลต่าง EN)</th><th>ชนิดพันธะ</th><th>ตัวอย่าง</th></tr></thead>
+          <tbody>
+            <tr><td>0 – 0.4</td><td>Nonpolar Covalent</td><td>H₂, Cl₂, N₂</td></tr>
+            <tr><td>0.4 – 1.7</td><td>Polar Covalent</td><td>HCl, H₂O, HF</td></tr>
+            <tr><td>&gt; 1.7</td><td>Ionic</td><td>NaCl, MgO, KF</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUMMARY + QUIZ ══ -->
+<section class="lesson-section fade-in" id="s5">
+  <div class="container">
+    <div class="summary-box">
+      <h5><i class="bi bi-bookmark-star-fill"></i> สรุปสำคัญ บทที่ 3 — พันธะเคมี</h5>
+      <ul>
+        <li>พันธะไอออนิก: ถ่ายโอน e⁻ (โลหะ + อโลหะ, ΔEN ≥ 1.7)</li>
+        <li>พันธะโคเวเลนต์: ใช้ e⁻ ร่วม (อโลหะ + อโลหะ)</li>
+        <li>พันธะโลหะ: electron sea → นำไฟฟ้าดีมาก</li>
+        <li>กฎออกเตต: อะตอมต้องการ e⁻ ชั้นนอก = 8</li>
+        <li>Polar molecule: ΔEN ≥ 0.4, โมเมนต์ไดโพล ≠ 0</li>
+        <li>Nonpolar: ΔEN &lt; 0.4 หรือโมเมนต์หักล้างกัน</li>
+      </ul>
+    </div>
+
+    <div class="quiz-section" id="quiz3">
+      <h4><i class="bi bi-patch-question-fill"></i> แบบทดสอบ บทที่ 3</h4>
+
+      <div class="quiz-question" data-ans="b">
+        <p>1. พันธะชนิดใดเกิดจากการถ่ายโอนอิเล็กตรอน?</p>
+        <label class="quiz-opt"><input type="radio" name="q3_1" value="a"> พันธะโคเวเลนต์</label>
+        <label class="quiz-opt"><input type="radio" name="q3_1" value="b"> พันธะไอออนิก</label>
+        <label class="quiz-opt"><input type="radio" name="q3_1" value="c"> พันธะโลหะ</label>
+        <div class="quiz-result" id="res3_1"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="c">
+        <p>2. H₂O เป็นโมเลกุลประเภทใด?</p>
+        <label class="quiz-opt"><input type="radio" name="q3_2" value="a"> Nonpolar covalent</label>
+        <label class="quiz-opt"><input type="radio" name="q3_2" value="b"> Ionic</label>
+        <label class="quiz-opt"><input type="radio" name="q3_2" value="c"> Polar covalent</label>
+        <div class="quiz-result" id="res3_2"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="a">
+        <p>3. ทำไมโลหะจึงนำไฟฟ้าได้ดี?</p>
+        <label class="quiz-opt"><input type="radio" name="q3_3" value="a"> มี electron sea เคลื่อนที่อิสระ</label>
+        <label class="quiz-opt"><input type="radio" name="q3_3" value="b"> มีไอออนบวกในโครงสร้าง</label>
+        <label class="quiz-opt"><input type="radio" name="q3_3" value="c"> มีพันธะโคเวเลนต์สาม</label>
+        <div class="quiz-result" id="res3_3"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="b">
+        <p>4. N₂ มีพันธะโคเวเลนต์ประเภทใด?</p>
+        <label class="quiz-opt"><input type="radio" name="q3_4" value="a"> พันธะเดี่ยว</label>
+        <label class="quiz-opt"><input type="radio" name="q3_4" value="b"> พันธะสาม</label>
+        <label class="quiz-opt"><input type="radio" name="q3_4" value="c"> พันธะคู่</label>
+        <div class="quiz-result" id="res3_4"></div>
+      </div>
+
+      <button class="btn-check-quiz mt-2" onclick="checkQuiz('quiz3')">
+        <i class="bi bi-check2-circle"></i> ตรวจคำตอบ
+      </button>
+      <div class="quiz-score" id="score3"></div>
+    </div>
+
+    <div class="page-nav">
+      <a href="chapter2.html"><i class="bi bi-arrow-left"></i> บทที่ 2: ตารางธาตุ</a>
+      <span class="page-info">📖 บทที่ 3 / 4</span>
+      <a href="chapter4.html">บทที่ 4: โมลและสูตรเคมี <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">⚗️ Chem<span>M4</span></div>
+    <p>เนื้อหาเคมี ม.4 ตามหลักสูตร สสวท. | สร้างเพื่อการศึกษาไทย</p>
+    <p class="mt-1" style="font-size:.78rem;opacity:.5">© 2024 Chemistry M4 Learning</p>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

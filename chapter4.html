@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>บทที่ 4: โมลและสูตรเคมี | เคมี ม.4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Prompt:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-logo">⚗️ Chem<span>M4</span></div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <div class="preloader-text">กำลังโหลด บทที่ 4...</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-icon"><i class="bi bi-flask"></i></div>
+      เคมี ม.4
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4 text-primary"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> หน้าหลัก</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter1.html">⚛️ บทที่ 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter2.html">📊 บทที่ 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="chapter3.html">🔗 บทที่ 3</a></li>
+        <li class="nav-item"><a class="nav-link active" href="chapter4.html">⚖️ บทที่ 4</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CHAPTER HERO -->
+<div class="chapter-hero ch4-hero">
+  <div class="container position-relative">
+    <div class="hero-icon">⚖️</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">หน้าหลัก</a></li>
+        <li class="breadcrumb-item active">บทที่ 4</li>
+      </ol>
+    </nav>
+    <h1>โมลและสูตรเคมี</h1>
+    <p class="subtitle">Mole Concept · Avogadro's Number · Empirical &amp; Molecular Formula</p>
+  </div>
+</div>
+
+<!-- ══ 4.1 โมลคืออะไร ══ -->
+<section class="lesson-section fade-in" id="s1">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fffbeb;color:#d97706"><i class="bi bi-123"></i></div>
+      <h3>4.1 โมลคืออะไร?</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-5">
+        <div class="content-card text-center">
+          <div style="font-size:3.5rem;margin-bottom:1rem">🔢</div>
+          <h4 class="justify-content-center">โมล (Mole)</h4>
+          <p>โมลคือ<strong>หน่วยวัดปริมาณสาร</strong> (SI unit) ใช้สัญลักษณ์ <strong>mol</strong></p>
+          <p>เปรียบเหมือน "โหล" แต่ใหญ่กว่ามาก — 1 โหล = 12 ชิ้น, 1 โมล = 6.022 × 10²³ อนุภาค!</p>
+          <div class="formula-card">
+            <h5>เลขอาโวกาโดร (Avogadro's Number)</h5>
+            <div class="formula">N_A = 6.022 × 10²³</div>
+            <p>อนุภาค/โมล (mol⁻¹)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="content-card">
+          <h4><i class="bi bi-lightbulb text-warning"></i> เข้าใจขนาดของ N_A</h4>
+          <p style="font-size:.9rem">ตัวเลข 6.022 × 10²³ ใหญ่มากแค่ไหน?</p>
+          <div class="p-3 rounded" style="background:#fffbeb;border:1px dashed #fbbf24">
+            <ul style="font-size:.85rem;margin:0">
+              <li>ถ้านับ 1 อนุภาค/วินาที ต้องใช้เวลา ~19 ล้านล้านปี</li>
+              <li>มากกว่าจำนวนทรายบนโลกหลายเท่า</li>
+              <li>มวลอิเล็กตรอน 1 โมล = เพียง 0.548 มิลลิกรัม</li>
+            </ul>
+          </div>
+          <h4 class="mt-3"><i class="bi bi-question-circle text-warning"></i> ทำไมต้องใช้โมล?</h4>
+          <p style="font-size:.88rem">อะตอมและโมเลกุลมีขนาดเล็กมาก การนับเป็นอนุภาคเดียวๆ ไม่สะดวก โมลช่วยให้เราทำงานกับ<strong>ปริมาณที่วัดได้จริง</strong>เช่น กรัม และลิตร</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4.2 การแปลงหน่วย ══ -->
+<section class="lesson-section fade-in" id="s2">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#ecfdf5;color:#059669"><i class="bi bi-arrow-repeat"></i></div>
+      <h3>4.2 การแปลงระหว่างกรัม โมล และจำนวนอนุภาค</h3>
+    </div>
+    <div class="row g-3 mb-3">
+      <!-- diagram -->
+      <div class="col-md-12">
+        <div class="content-card">
+          <h4><i class="bi bi-diagram-3 text-success"></i> แผนภาพการแปลงหน่วย</h4>
+          <div class="row g-2 text-center align-items-center my-2">
+            <div class="col-12 col-md-3">
+              <div class="p-3 rounded" style="background:#fefce8;border:2px solid #fbbf24">
+                <div style="font-size:2rem">⚖️</div>
+                <strong>มวล (g)</strong>
+              </div>
+            </div>
+            <div class="col-12 col-md-1 d-flex flex-column align-items-center">
+              <div style="font-size:.75rem;color:#64748b;font-weight:600">÷ M</div>
+              <div style="font-size:1.2rem">⇄</div>
+              <div style="font-size:.75rem;color:#64748b;font-weight:600">× M</div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="p-3 rounded" style="background:#f0fdf4;border:2px solid #10b981">
+                <div style="font-size:2rem">🧪</div>
+                <strong>โมล (mol)</strong>
+              </div>
+            </div>
+            <div class="col-12 col-md-1 d-flex flex-column align-items-center">
+              <div style="font-size:.75rem;color:#64748b;font-weight:600">× N_A</div>
+              <div style="font-size:1.2rem">⇄</div>
+              <div style="font-size:.75rem;color:#64748b;font-weight:600">÷ N_A</div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="p-3 rounded" style="background:#fff7ed;border:2px solid #f97316">
+                <div style="font-size:2rem">⚛️</div>
+                <strong>จำนวนอนุภาค (N)</strong>
+              </div>
+            </div>
+          </div>
+          <div class="formula-card mt-2">
+            <h5>สูตรสำคัญ</h5>
+            <div class="formula" style="font-size:1.1rem">n = m / M &nbsp;&nbsp;|&nbsp;&nbsp; N = n × N_A</div>
+            <p>n = โมล (mol) &nbsp;|&nbsp; m = มวล (g) &nbsp;|&nbsp; M = มวลโมลาร์ (g/mol) &nbsp;|&nbsp; N = จำนวนอนุภาค</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 1 — มวล → โมล</h6>
+          <p style="font-size:.88rem">น้ำ (H₂O) 36 กรัม มีกี่โมล?</p>
+          <div class="step">① M(H₂O) = 2(1) + 16 = <strong>18 g/mol</strong></div>
+          <div class="step">② n = m / M = 36 / 18 = <strong>2 mol</strong></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 2 — โมล → อนุภาค</h6>
+          <p style="font-size:.88rem">2 mol ของ H₂O มีกี่โมเลกุล?</p>
+          <div class="step">N = n × N_A = 2 × 6.022×10²³</div>
+          <div class="step">= <strong>1.204 × 10²⁴ โมเลกุล</strong></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 3 — กรัม → อนุภาค</h6>
+          <p style="font-size:.88rem">NaCl 58.5 กรัม มีกี่ไอออน Na⁺?</p>
+          <div class="step">① M(NaCl) = 23 + 35.5 = <strong>58.5 g/mol</strong></div>
+          <div class="step">② n = 58.5 / 58.5 = <strong>1 mol</strong></div>
+          <div class="step">③ Na⁺ = 1 × 6.022×10²³ = <strong>6.022 × 10²³ ไอออน</strong></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-list-check text-success"></i> มวลโมลาร์ (M) ของสารทั่วไป</h4>
+          <table class="table-chem w-100">
+            <thead><tr><th>สาร</th><th>สูตร</th><th>M (g/mol)</th></tr></thead>
+            <tbody>
+              <tr><td>น้ำ</td><td>H₂O</td><td>18</td></tr>
+              <tr><td>คาร์บอนไดออกไซด์</td><td>CO₂</td><td>44</td></tr>
+              <tr><td>เกลือแกง</td><td>NaCl</td><td>58.5</td></tr>
+              <tr><td>แคลเซียมคาร์บอเนต</td><td>CaCO₃</td><td>100</td></tr>
+              <tr><td>กลูโคส</td><td>C₆H₁₂O₆</td><td>180</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4.3 สูตรเอมพิริคัล ══ -->
+<section class="lesson-section fade-in" id="s3">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#fdf4ff;color:#9333ea"><i class="bi bi-file-earmark-text"></i></div>
+      <h3>4.3 สูตรเอมพิริคัลและสูตรโมเลกุล</h3>
+    </div>
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-file-earmark-text text-primary"></i> สูตรทั้ง 2 ประเภท</h4>
+          <table class="table-chem w-100 mb-3">
+            <thead><tr><th>ชนิดสูตร</th><th>ความหมาย</th><th>ตัวอย่าง</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Empirical Formula</strong><br/>(สูตรเอมพิริคัล)</td>
+                <td>อัตราส่วนอย่างง่ายที่สุดของอะตอม</td>
+                <td>CH₂O</td>
+              </tr>
+              <tr>
+                <td><strong>Molecular Formula</strong><br/>(สูตรโมเลกุล)</td>
+                <td>จำนวนอะตอมที่แท้จริงในโมเลกุล</td>
+                <td>C₆H₁₂O₆</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="formula-card">
+            <h5>ความสัมพันธ์</h5>
+            <div class="formula" style="font-size:1rem">Molecular = (Empirical)ₙ × n</div>
+            <p>n = จำนวนเต็มบวก (1, 2, 3, ...)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-list-check text-primary"></i> ตัวอย่างความสัมพันธ์</h4>
+          <table class="table-chem w-100">
+            <thead><tr><th>สาร</th><th>Empirical</th><th>Molecular</th><th>n</th></tr></thead>
+            <tbody>
+              <tr><td>กลูโคส</td><td>CH₂O</td><td>C₆H₁₂O₆</td><td>6</td></tr>
+              <tr><td>น้ำตาลซูโครส</td><td>CH₂O</td><td>C₁₂H₂₂O₁₁</td><td>12*</td></tr>
+              <tr><td>เอทานอล</td><td>C₂H₆O</td><td>C₂H₆O</td><td>1</td></tr>
+              <tr><td>Benzene</td><td>CH</td><td>C₆H₆</td><td>6</td></tr>
+              <tr><td>ไฮโดรเจนเปอร์ออกไซด์</td><td>HO</td><td>H₂O₂</td><td>2</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:.78rem;color:#94a3b8;margin-top:.4rem">* ซูโครสสูตรเอมพิริคัลไม่ใช่ CH₂O แท้จริง แต่ใช้เพื่อเปรียบเทียบ</p>
+        </div>
+      </div>
+    </div>
+    <div class="example-box">
+      <h6><i class="bi bi-pencil-square"></i> ตัวอย่าง: หาสูตรเอมพิริคัล</h6>
+      <p style="font-size:.88rem">สาร X มีองค์ประกอบโดยมวล: C = 40%, H = 6.67%, O = 53.33%</p>
+      <div class="step">① สมมติมวลรวม 100 g → C = 40 g, H = 6.67 g, O = 53.33 g</div>
+      <div class="step">② แปลงเป็นโมล: n(C) = 40/12 = 3.33, n(H) = 6.67/1 = 6.67, n(O) = 53.33/16 = 3.33</div>
+      <div class="step">③ หารด้วยค่าน้อยสุด (3.33): C:H:O = 1:2:1</div>
+      <div class="step">④ สูตรเอมพิริคัล = <strong>CH₂O</strong> (มวล = 30 g/mol)</div>
+      <div class="step">⑤ ถ้ามวลโมเลกุลจริง = 180 g/mol → n = 180/30 = 6 → สูตรโมเลกุล = <strong>C₆H₁₂O₆</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4.4 แก๊สที่ STP ══ -->
+<section class="lesson-section fade-in" id="s4">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#f0f9ff;color:#0284c7"><i class="bi bi-thermometer-half"></i></div>
+      <h3>4.4 โมลกับปริมาตรแก๊สที่ STP</h3>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="content-card">
+          <h4><i class="bi bi-wind text-primary"></i> สภาวะมาตรฐาน (STP)</h4>
+          <div class="p-3 rounded mb-3" style="background:#f0f9ff;border:1.5px solid #7dd3fc">
+            <strong>STP = Standard Temperature and Pressure</strong><br/>
+            อุณหภูมิ 0°C (273.15 K), ความดัน 1 atm (101.325 kPa)
+          </div>
+          <p>ที่ STP แก๊ส 1 โมลทุกชนิดมีปริมาตรเท่ากัน:</p>
+          <div class="formula-card">
+            <h5>ปริมาตรโมลาร์แก๊สที่ STP</h5>
+            <div class="formula">V_m = 22.4 L/mol</div>
+            <p>V = n × 22.4 &nbsp;|&nbsp; n = V / 22.4</p>
+          </div>
+          <p style="font-size:.85rem" class="mt-2">เหตุผล: ตาม <strong>กฎแก๊สสมบูรณ์</strong> (Ideal Gas Law: PV = nRT) ที่ STP แก๊สทุกชนิดมีพฤติกรรมเดียวกัน</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="example-box">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 1</h6>
+          <p style="font-size:.88rem">CO₂ 0.5 mol มีปริมาตรที่ STP เท่าไร?</p>
+          <div class="step">V = n × 22.4 = 0.5 × 22.4 = <strong>11.2 L</strong></div>
+        </div>
+        <div class="example-box mt-2">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 2</h6>
+          <p style="font-size:.88rem">O₂ 3 mol มีปริมาตรที่ STP เท่าไร?</p>
+          <div class="step">V = 3 × 22.4 = <strong>67.2 L</strong></div>
+        </div>
+        <div class="example-box mt-2">
+          <h6><i class="bi bi-pencil-square"></i> ตัวอย่างที่ 3</h6>
+          <p style="font-size:.88rem">แก๊สที่ STP มีปริมาตร 44.8 L มีกี่โมล?</p>
+          <div class="step">n = V / 22.4 = 44.8 / 22.4 = <strong>2 mol</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="content-card mt-3">
+      <h4><i class="bi bi-grid-3x3 text-primary"></i> สรุปการแปลงหน่วยทั้งหมด</h4>
+      <div class="table-responsive">
+        <table class="table-chem w-100">
+          <thead><tr><th>จาก</th><th>ไป</th><th>สูตร</th><th>ตัวอย่าง</th></tr></thead>
+          <tbody>
+            <tr><td>มวล (g)</td><td>โมล</td><td>n = m/M</td><td>18 g H₂O → 1 mol</td></tr>
+            <tr><td>โมล</td><td>มวล (g)</td><td>m = n × M</td><td>2 mol NaCl → 117 g</td></tr>
+            <tr><td>โมล</td><td>อนุภาค</td><td>N = n × 6.022×10²³</td><td>1 mol → 6.022×10²³</td></tr>
+            <tr><td>อนุภาค</td><td>โมล</td><td>n = N / 6.022×10²³</td><td>1.204×10²⁴ → 2 mol</td></tr>
+            <tr><td>โมล (แก๊ส STP)</td><td>ปริมาตร (L)</td><td>V = n × 22.4</td><td>3 mol → 67.2 L</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUMMARY + QUIZ ══ -->
+<section class="lesson-section fade-in" id="s5">
+  <div class="container">
+    <div class="summary-box">
+      <h5><i class="bi bi-bookmark-star-fill"></i> สรุปสำคัญ บทที่ 4 — โมลและสูตรเคมี</h5>
+      <ul>
+        <li>1 mol = 6.022 × 10²³ อนุภาค (เลขอาโวกาโดร)</li>
+        <li><strong>n = m/M</strong> &nbsp;(n=โมล, m=มวล, M=มวลโมลาร์)</li>
+        <li><strong>N = n × N_A</strong> &nbsp;(จำนวนอนุภาค)</li>
+        <li>สูตรเอมพิริคัล = อัตราส่วนอย่างง่ายของอะตอม</li>
+        <li>สูตรโมเลกุล = (Empirical)ₙ × n</li>
+        <li>แก๊ส 1 mol ที่ STP มีปริมาตร = <strong>22.4 L</strong></li>
+      </ul>
+    </div>
+
+    <div class="quiz-section" id="quiz4">
+      <h4><i class="bi bi-patch-question-fill"></i> แบบทดสอบ บทที่ 4</h4>
+
+      <div class="quiz-question" data-ans="b">
+        <p>1. 1 โมลมีอนุภาคกี่อนุภาค?</p>
+        <label class="quiz-opt"><input type="radio" name="q4_1" value="a"> 6.022 × 10²¹</label>
+        <label class="quiz-opt"><input type="radio" name="q4_1" value="b"> 6.022 × 10²³</label>
+        <label class="quiz-opt"><input type="radio" name="q4_1" value="c"> 6.022 × 10²⁵</label>
+        <div class="quiz-result" id="res4_1"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="c">
+        <p>2. น้ำ (H₂O) 90 กรัม คิดเป็นกี่โมล? (M=18 g/mol)</p>
+        <label class="quiz-opt"><input type="radio" name="q4_2" value="a"> 3 mol</label>
+        <label class="quiz-opt"><input type="radio" name="q4_2" value="b"> 4 mol</label>
+        <label class="quiz-opt"><input type="radio" name="q4_2" value="c"> 5 mol</label>
+        <div class="quiz-result" id="res4_2"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="a">
+        <p>3. C₆H₁₂O₆ มีสูตรเอมพิริคัลคืออะไร?</p>
+        <label class="quiz-opt"><input type="radio" name="q4_3" value="a"> CH₂O</label>
+        <label class="quiz-opt"><input type="radio" name="q4_3" value="b"> C₂H₄O₂</label>
+        <label class="quiz-opt"><input type="radio" name="q4_3" value="c"> C₃H₆O₃</label>
+        <div class="quiz-result" id="res4_3"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="b">
+        <p>4. O₂ 3 mol มีปริมาตรที่ STP เท่าไร?</p>
+        <label class="quiz-opt"><input type="radio" name="q4_4" value="a"> 44.8 L</label>
+        <label class="quiz-opt"><input type="radio" name="q4_4" value="b"> 67.2 L</label>
+        <label class="quiz-opt"><input type="radio" name="q4_4" value="c"> 22.4 L</label>
+        <div class="quiz-result" id="res4_4"></div>
+      </div>
+
+      <div class="quiz-question" data-ans="c">
+        <p>5. มวลโมลาร์ของ CO₂ คือเท่าไร? (C=12, O=16)</p>
+        <label class="quiz-opt"><input type="radio" name="q4_5" value="a"> 28 g/mol</label>
+        <label class="quiz-opt"><input type="radio" name="q4_5" value="b"> 40 g/mol</label>
+        <label class="quiz-opt"><input type="radio" name="q4_5" value="c"> 44 g/mol</label>
+        <div class="quiz-result" id="res4_5"></div>
+      </div>
+
+      <button class="btn-check-quiz mt-2" onclick="checkQuiz('quiz4')">
+        <i class="bi bi-check2-circle"></i> ตรวจคำตอบ
+      </button>
+      <div class="quiz-score" id="score4"></div>
+    </div>
+
+    <div class="page-nav">
+      <a href="chapter3.html"><i class="bi bi-arrow-left"></i> บทที่ 3: พันธะเคมี</a>
+      <span class="page-info">📖 บทที่ 4 / 4 — จบแล้ว!</span>
+      <a href="index.html"><i class="bi bi-house"></i> กลับหน้าหลัก</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">⚗️ Chem<span>M4</span></div>
+    <p>เนื้อหาเคมี ม.4 ตามหลักสูตร สสวท. | สร้างเพื่อการศึกษาไทย</p>
+    <p class="mt-1" style="font-size:.78rem;opacity:.5">© 2024 Chemistry M4 Learning</p>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
